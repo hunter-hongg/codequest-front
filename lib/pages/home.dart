@@ -22,7 +22,7 @@ class _HomePageState extends State<HomePage> {
             const SizedBox(height: 130),
             Simple.simpleClick(
               func: () {
-                Navigator.pushNamed(context, '/g1');
+                Navigator.pushNamed(context, '/guide1');
               },
               show: "开始编程之旅",
             ),

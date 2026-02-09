@@ -3,7 +3,9 @@ import 'package:flutter/material.dart';
 class ROTextBox extends StatelessWidget {
   final String text;
 
-  const ROTextBox({super.key, required this.text});
+  const ROTextBox({super.key, required this.text, this.fontSize = 16});
+
+  final double fontSize;
 
   @override
   Widget build(BuildContext context) {
@@ -24,15 +26,12 @@ class ROTextBox extends StatelessWidget {
     return Container(
       padding: decoration.contentPadding,
       decoration: BoxDecoration(
-        border: Border.all(
-          color: Colors.grey.shade400,
-          width: 1.0,
-        ),
+        border: Border.all(color: Colors.grey.shade400, width: 1.0),
         borderRadius: BorderRadius.circular(4.0), // 默认 TextField 圆角是 4.0
       ),
       child: Text(
         text,
-        style: TextStyle(fontSize: 16, height: 1.4),
+        style: TextStyle(fontSize: fontSize, height: 1.4),
         textAlign: TextAlign.start,
         softWrap: true,
         overflow: TextOverflow.clip,
