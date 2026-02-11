@@ -18,6 +18,8 @@ class MyApp extends StatelessWidget {
         '/g2': (context) => Guan2Page(),
         '/g3': (context) => Guan3Page(),
         '/g4': (context) => Guan4Page(),
+        '/g5': (context) => Guan5Page(),
+        '/g6': (context) => Guan6Page(),
       },
     );
   }
