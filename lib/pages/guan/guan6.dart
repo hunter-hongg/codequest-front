@@ -22,7 +22,7 @@ final guan6Config = GuanConfig(
     }
     return result.toString();
   },
-  nextRoute: '/g7',
+  nextRoute: '/guide3',
   isSimpleTest: false, // 多测试用例模式
   showResultButton: true, // 显示结果按钮
 );
